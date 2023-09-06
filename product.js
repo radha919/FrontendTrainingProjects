@@ -60,4 +60,15 @@ function addProduct(){
     document.getElementById('productdata').innerHTML=tableHeader+tableBody+'</table>';
 
 
+
  }
+
+//  var fruits=["apple","banana","mango"]
+
+//  function printFruits(fruitarray){
+//     for(var i=0;i<fruitarray.length;i++){
+//         console.log(fruitarray.[i]);
+//     }
+//  }
+
+//  printFruits(fruits);

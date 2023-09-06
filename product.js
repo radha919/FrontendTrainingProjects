@@ -63,12 +63,12 @@ function addProduct(){
 
  }
 
-//  var fruits=["apple","banana","mango"]
+ var fruits=["apple","banana","mango"]
 
-//  function printFruits(fruitarray){
-//     for(var i=0;i<fruitarray.length;i++){
-//         console.log(fruitarray.[i]);
-//     }
-//  }
+ function printFruits(fruitarray){
+    for(var i=0;i<fruitarray.length;i++){
+        console.log(fruitarray.[i]);
+    }
+ }
 
-//  printFruits(fruits);
+ printFruits(fruits);

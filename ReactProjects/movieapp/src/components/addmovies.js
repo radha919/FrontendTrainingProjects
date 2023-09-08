@@ -12,6 +12,7 @@ class AddMovie extends React.Component{
         this.setMovieName=this.setMovieName.bind(this);
         this.setMovieDescription=this.setMovieDescription.bind(this);
         this.setMovieType=this.setMovieType.bind(this);
+        this.saveMovie=this.saveMovie.bind(this);
     }
     setMovieName(e){
         //how to change state property value
@@ -28,6 +29,11 @@ class AddMovie extends React.Component{
         this.setState({type:e.target.value});
 
     }
+    saveMovie(){
+        alert('Movie added:' +this.state.name+','+this.state.type);
+       // fetch('.net core api service url')
+    }
+
   render(){
     return(
         <div>
@@ -49,7 +55,7 @@ class AddMovie extends React.Component{
                     <input type="text" value={this.state.type} className="form-control" onChange={this.setMovieType} />
 
                 </div>
-                <input type="button" value="Save" className="btn btn-primary" />
+                <input type="button" onClick={this.saveMovie} value="Save" className="btn btn-primary" />
                 <input type="button" value="Reset" className="btn btn-primary" />
             </form>
         </div>
